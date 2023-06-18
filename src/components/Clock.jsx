@@ -31,8 +31,8 @@ class Clock extends React.Component {
   render() {
     return(
       <>
-        <div class="text-center pt-14 font-black text-off-white1">{this.state.date}</div>
-        <div class="text-center font-black text-off-white1">{this.state.day}</div>
+        <div className="text-center pt-14 font-black text-off-white1">{this.state.date}</div>
+        <div className="text-center font-black text-off-white1">{this.state.day}</div>
       </>
     );
   }

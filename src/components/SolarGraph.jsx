@@ -371,8 +371,8 @@ class SolarGraph extends React.Component {
                   render() {
                     return (
                       <>
-                      <div id="container" class="w-full h-full rounded-xl">
-                      <canvas height="300" width="300" class="w-full h-full rounded-xl" id="canvas"/>
+                      <div id="container" className="w-full h-full rounded-xl">
+                      <canvas height="300" width="300" className="w-full h-full rounded-xl" id="canvas"/>
                       </div>
                       </>
                       );
