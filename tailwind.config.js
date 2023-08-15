@@ -47,6 +47,7 @@ module.exports = {
         'google-icon': "url('/src/assets/img/google.svg')",
         'duck-icon': "url('/src/assets/img/duck.svg')",
         'wolfram-icon': "url('/src/assets/img/wolfram.svg')",
+        'youtube-icon': "url('/src/assets/img/youtube.svg')",
         'stack-icon': "url('/src/assets/img/stack.svg')",
         'sun-icon': "url('/src/assets/img/sun.svg')",
         'sun-cloud-icon': "url('/src/assets/img/sun-cloud.svg')",

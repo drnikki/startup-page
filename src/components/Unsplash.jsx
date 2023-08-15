@@ -9,18 +9,18 @@ class Unsplash extends Component {
       photos: [],
     }
   }
-  
+
   componentDidMount() {
     const accessKey = config.unsplashCredential;
     var categoryArray = this.props.search;
-    var categoryIndex = Math.floor(Math.random() * categoryArray.length); 
+    var categoryIndex = Math.floor(Math.random() * categoryArray.length);
     var category = categoryArray[categoryIndex];
-    
+
     // https://unsplash.com/documentation#get-a-random-photo
     axios.get("https://api.unsplash.com/photos/random", {
-      params: { 
+      params: {
         query: category,
-        count: 10, 
+        count: 10,
         orientation: "squarish",
       },
       headers: {
@@ -29,7 +29,7 @@ class Unsplash extends Component {
     }).then(res => {
       var totalFound = res.data.length;
       var randNum = Math.floor(Math.random() * totalFound)
-      var full=res.data[randNum].urls.raw;
+      var full = res.data[randNum].urls.raw;
       this.setState({ photos: full });
     }).catch(err => {
       console.log(err);
@@ -39,7 +39,7 @@ class Unsplash extends Component {
   render() {
     return (
       <div className="relative rounded-xl overflow-hidden h-full bg-center bg-no-repeat border-0 dark:border-4 dark:border-off-white2">
-      <img className="min-w-full min-h-full" src={this.state.photos}/>
+        <img className="min-w-full min-h-full" src={this.state.photos ?? './src/assets/img/lezard.jpg'} />
       </div>
     );
   }
