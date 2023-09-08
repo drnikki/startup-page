@@ -6,9 +6,9 @@ import postcss from './postcss.config.js'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "https://timothypholmes.github.io/startup-page/",
+  base: "https://dogfootruler-kr.github.io/startup-page/",
   plugins: [
-    react(), 
+    react(),
     vitePluginString()
   ],
   css: {
